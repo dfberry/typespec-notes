@@ -1,0 +1,40 @@
+{
+  "name": "typespec-dina",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "lint": "tspc lint",
+    "test": "tspc test",
+    "prettier": "prettier --write .",
+    "format": "npm run prettier",
+    "prettier:check": "prettier --check .",
+    "generate:server": "tsp compile . --emit=@typespec/http-server-js",
+    "generate:client": "tsp compile . --emit=@typespec/http-client-js"
+  },
+  "peerDependencies": {
+    "@typespec/compiler": "latest",
+    "@typespec/http": "latest",
+    "@typespec/openapi": "latest",
+    "@typespec/openapi3": "latest",
+    "@typespec/rest": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@typespec/compiler": "latest",
+    "@typespec/http": "latest",
+    "@typespec/openapi": "latest",
+    "@typespec/openapi3": "latest",
+    "@typespec/rest": "latest",
+    "prettier": "^3.5.3"
+  },
+  "private": true,
+  "packageManager": "npm@11.2.0+sha512.3dc9c50ba813a3d54393155a435fe66404b72685ab0e3008f9ae9ed8d81f6104860f07ed2656dd5748c1322d95f3140fa9b19c59a6bba7750fd12285f81866da",
+  "dependencies": {
+    "@typespec/http-client-js": "^0.3.0",
+    "@typespec/http-server-js": "^0.58.0-alpha.12",
+    "@typespec/ts-http-runtime": "^0.2.1",
+    "uri-template": "^2.0.0"
+  }
+}
