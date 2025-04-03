@@ -9,7 +9,7 @@
       "declaration": true,
       "noFallthroughCasesInSwitch": true,
       "noUnusedLocals": false,
-      "noUnusedParameters": true,
+      "noUnusedParameters": false,
       "useDefineForClassFields": true,
       "strictPropertyInitialization": false,
       "allowJs": true,
@@ -20,6 +20,6 @@
       "resolveJsonModule": true,
       "sourceMap": true
     },
-    "include": ["./tsp-output/**/*.ts"],
+    "include": ["./**/*.ts"],
     "exclude": ["node_modules", "dist"]
   }
